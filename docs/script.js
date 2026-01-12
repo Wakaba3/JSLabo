@@ -1,7 +1,7 @@
 const worker = new Worker("worker.js");
 
 addEventListener("pointerdown", event => {
-    postMessage(null);
+    worker.postMessage(null);
 });
 
 addEventListener("message", event => {
