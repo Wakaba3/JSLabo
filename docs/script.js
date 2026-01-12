@@ -4,6 +4,6 @@ addEventListener("pointerdown", event => {
     worker.postMessage(null);
 });
 
-addEventListener("message", event => {
+onmessage = event => {
     console.log(`Worker: ${event.data}`);
-});
+}
