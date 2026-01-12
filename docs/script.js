@@ -1,9 +1,9 @@
 const worker = new Worker("worker.js");
 
 addEventListener("message", event => {
-    alert(`Worker: ${event.data}`);
+    console.log(`Worker: ${event.data}`);
 });
 
-alert(add(2, 8));
+console.log(add(2, 8));
 
 worker.postMessage([3, 7]);
