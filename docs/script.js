@@ -5,3 +5,5 @@ addEventListener("message", event => {
 });
 
 alert(add(2, 8));
+
+worker.postMessage([3, 7]);

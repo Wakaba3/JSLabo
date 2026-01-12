@@ -1,3 +1,5 @@
 importScripts("utils.js");
 
-postMessage(add(3, 7));
+addEventListener("message", event => {
+    postMessage(add(event.data[0], event.data[1]));
+});
