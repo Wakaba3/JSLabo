@@ -1,5 +1,5 @@
 importScripts("utils.js");
 
-onmessage = event => {
-    postMessage(add(5, 15));
-}
+setInterval(() => {
+    postMessage(add(Math.random(), Math.random()));
+}, 1000);
