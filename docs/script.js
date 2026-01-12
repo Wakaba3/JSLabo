@@ -5,5 +5,3 @@ addEventListener("message", event => {
 });
 
 console.log(add(2, 8));
-
-worker.postMessage([3, 7]);

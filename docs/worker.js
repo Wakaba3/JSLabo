@@ -1,5 +1,5 @@
 importScripts("utils.js");
 
-addEventListener("message", event => {
-    postMessage(add(event.data[0], event.data[1]));
-});
+setTimeout(() => {
+    postMessage(add(5, 15));
+}, 1000);
