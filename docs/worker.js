@@ -1,5 +1,3 @@
-importScripts("utils.js");
-
 setInterval(() => {
-    postMessage(add(Math.random(), Math.random()));
+    postMessage(Math.random());
 }, 1000);
