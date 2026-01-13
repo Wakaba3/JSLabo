@@ -1,9 +1,7 @@
 importScripts("utils.js");
 
-console.log("Log from worker");
+console.log(`${add(1, 11)}`);
 
-onmessage = event => {
-    setInterval(() => {
-        postMessage(add(Math.random(), Math.random()));
-    }, 1000);
-};
+addEventListener("message", event => {
+    console.log("On worker");
+});
