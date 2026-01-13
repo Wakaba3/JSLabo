@@ -1,5 +1,7 @@
 const worker = new Worker("worker.js");
 
+const canvas = document.getElementById("canvas");
+
 // Prevent right clicking
 addEventListener("contextmenu", event => event.preventDefault(), { passive: false });
 
