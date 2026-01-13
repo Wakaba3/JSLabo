@@ -9,5 +9,5 @@ addEventListener("contextmenu", event => event.preventDefault(), { passive: fals
 addEventListener("touchmove", event => event.preventDefault(), { passive: false });
 
 addEventListener("message", event => {
-    alert(`Worker: ${event.data}`);
+    alert("Message");
 });
